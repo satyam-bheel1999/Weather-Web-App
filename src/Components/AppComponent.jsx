@@ -44,17 +44,25 @@ function AppComponent() {
     }, [city])
 
   return (
-    <div className= "font-roboto bg-center bg-cover bg-no-repeat bg-[url(https://images.unsplash.com/photo-1664629926569-51d98149e122?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] min-h-screen flex flex-col items-center p-4">
-        <h1 className="text-3xl font-bold text-blue-500 m-12">Today's Weather</h1>
+    <div className='font-roboto bg-center bg-cover bg-no-repeat bg-[url(https://images.unsplash.com/photo-1656859963341-20476ac7930e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] min-h-screen '>
+      
+    <div className= "flex flex-row justify-between boredr border-yellow-300">
+        
 
 
 
-        <Searchbar setCity ={setCity}/>
+        
         {loading && <p className="text-blue-600">Loading...</p>}
         {error && <p className="text-red-600">{error}</p>}
         {weather && <Weather weather = {weather}/>}
+        <Searchbar setCity ={setCity}/>
 
     </div>
+
+    </div>
+    
+    
+    
 
     
   )

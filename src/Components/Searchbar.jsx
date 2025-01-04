@@ -18,11 +18,12 @@ function Searchbar({setCity}) {
 
   return (
     <>
-    <div className='flex items-center space-x-2 mb-6'>
+    <div className='h-screen w-1/4 p-16 absolute right-0 backdrop-blur shadow'>
+    <h1 className="text-3xl text-center text-white mb-16 p-6">Today's Weather</h1>
 
-    <input className='h-8 border-2 border-black rounded text-center' placeholder='Enter City Name' value={Inputvalue} onChange={(e) => {setInputvalue(e.target.value) }}></input>
+    <input className='h-8 text-center border-b-2 bg-transparent ' placeholder='Search Location...' value={Inputvalue} onChange={(e) => {setInputvalue(e.target.value) }}></input>
 
-    <button className='w-20 h-8 border-2 border-black rounded' onClick={HandleSearch}>Search</button>
+    <button className='w-20 h-8 border-none' onClick={HandleSearch}>Search</button>
 
     </div>
     
