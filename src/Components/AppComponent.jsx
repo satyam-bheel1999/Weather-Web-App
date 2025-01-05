@@ -46,12 +46,7 @@ function AppComponent() {
   return (
     <div className='font-roboto bg-center bg-cover bg-no-repeat bg-[url(https://images.unsplash.com/photo-1656859963341-20476ac7930e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] min-h-screen '>
       
-    <div className= "flex flex-row justify-between boredr border-yellow-300">
-        
-
-
-
-        
+    <div className= "flex flex-row justify-between">   
         {loading && <p className="text-blue-600">Loading...</p>}
         {error && <p className="text-red-600">{error}</p>}
         {weather && <Weather weather = {weather}/>}
